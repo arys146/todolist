@@ -76,10 +76,13 @@ Simple todo list with habits. Backend and frontend implemented.
   docker compose up -d --build
   ```
 - Run migrations to update db
-  `    docker compose exec web alembic revision --autogenerate -m "initial"
-    docker compose exec web alembic upgrade head
-   `
-  If there were no errors, the frontend should be available at http://localhost:5173, and the API and documentation at http://localhost:8000/docs.
+
+  ```
+  docker compose exec web alembic revision --autogenerate -m "initial"
+  docker compose exec web alembic upgrade head
+  ```
+
+  - If there were no errors, the frontend should be available at http://localhost:5173, and the API and documentation at http://localhost:8000/docs.
 
 ## Roadmap
 
