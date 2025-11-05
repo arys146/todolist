@@ -16,11 +16,11 @@ Simple todo list with habits. Backend and frontend implemented.
 
 **Backend**
 
-- Async FastAPI
-- SQLAlchemy for data access
-- PostgreSQL as the database
+- Async **FastAPI**
+- **SQLAlchemy** for data access
+- **PostgreSQL** as the database
 - Alembic for migrations
-- Redis for session checks and instant access-token invalidation
+- **Redis** for session checks and instant access-token invalidation
 - JWT authentication with access and refresh tokens
 
   - Refresh-token rotation
@@ -30,9 +30,9 @@ Simple todo list with habits. Backend and frontend implemented.
 
 **Frontend**
 
-- React
-- Axios for HTTP requests
-- Tailwind CSS for styling
+- **React**
+- **Axios** for HTTP requests
+- **Tailwind** CSS for styling
 
 ## Installation
 
