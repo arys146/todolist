@@ -94,7 +94,6 @@ class UserService:
               
         token_info = auth.create_refresh_token(user_id, sid, device_name=None)  
         refresh = token_info["token"] 
-        print(token_info)
         refresh_schema = RefreshCreate.model_validate(token_info)
         to_encode = AccessEncode.model_validate(token_info)
         access = auth.create_access_token(to_encode.model_dump())

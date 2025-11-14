@@ -89,7 +89,7 @@ export default function Home() {
                     <div>
                         <h4 className="text-xl font-semibold text-white mb-2">1. Clone Repository</h4>
                         <code className="block bg-gray-900/80 text-green-400 p-3 rounded-lg text-sm">
-                        git clone https://github.com/your-repo/todolist.git
+                        git clone https://github.com/arys146/todolist.git
                         </code>
                     </div>
                     </div>
@@ -117,10 +117,10 @@ export default function Home() {
                         <h4 className="text-xl font-semibold text-white mb-2">3. Start the Project</h4>
                         <code className="block bg-gray-900/80 text-green-400 p-3 rounded-lg text-sm">
                         cd todolist<br />
-                        docker-compose up
+                        docker compose up -d --build
                         </code>
                         <p className="text-gray-300 mt-2">
-                        Access the app at <span className="text-green-400">http://localhost:3000</span>
+                        Access the app at <span className="text-green-400">http://localhost:5173</span>
                         </p>
                     </div>
                     </div>

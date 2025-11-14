@@ -11,7 +11,6 @@ from repo.ramStorage import RamStorage
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login-form") 
 WWW_AUTH = {'WWW-Authenticate': 'Bearer realm="api", error="invalid_token"'}
-#TTL = int(os.getenv("REFRESH_EXPIRE_DAYS", 7))*24*60*60
 
 async def get_current_user_oauth2(token: str = Depends(oauth2_scheme), service: UserService = Depends(provide_user_service), ramStorage: RamStorage = Depends(provide_ram_storage)) -> User:
     payload = auth.decode_access_token(token)

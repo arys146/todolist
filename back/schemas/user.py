@@ -1,9 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 from datetime import time
-import os
 
-NAME = os.getenv("JWT_ACCESS_NAME", "access_token")
 
 
 class UserCreate(BaseModel):

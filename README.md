@@ -111,3 +111,7 @@ Simple todo list with habits. Backend and frontend implemented.
 - [ ] Proper display of completed/past tasks
 - [ ] Loading animations for checking a task or habit
 - [ ] Form validation everywhere and intuitive toast errors
+
+### Telegram Bot
+
+- [ ] Add a different service for telegram bot with notifications and posiible fronted features

@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "5432:5432"        # host:container
+      - "5432:5432"        
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -16,7 +16,7 @@ services:
       timeout: 3s
       retries: 10
 
-  # Optional: pgAdmin UI at http://localhost:5050
+  
   pgadmin:
     image: dpage/pgadmin4:8
     depends_on:
